@@ -7,9 +7,10 @@
 body{
     width: auto;
     overflow: hidden;
+    background-color: black;
 }
 
-#items{
+#sektioner{
     overflow-x: scroll;
     width: auto;
     white-space: nowrap;
@@ -20,4 +21,9 @@ body{
     width: 100%;
     height: 100vh;
     border: 1px solid black;
+}
+
+img{ /* --Temp-- */ 
+    height: 100px;
+    width: 100px;
 }
