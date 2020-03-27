@@ -23,6 +23,13 @@ body{
     border: 1px solid black;
 }
 
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
 img{ /* --Temp-- */ 
     height: 100px;
     width: 100px;
