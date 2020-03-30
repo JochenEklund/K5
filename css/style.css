@@ -30,6 +30,94 @@ body{
     height: 100vh;
 }
 
+.knappNext{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: black 1px solid;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}   
+
+.knappNext:hover{
+    border-color: white;
+}
+
+.knappNext span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.knappNext span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.knappNext:hover span{
+    padding-right: 25px;
+}
+  
+.knappNext:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.knappPre{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: black 1px solid;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}   
+
+.knappPre:hover{
+    border-color: white;
+}
+
+.knappPre span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.knappPre span:after{
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -10px;
+    transition: 0.5s;
+}
+  
+.knappPre:hover span{
+    padding-left: 25px;
+}
+  
+.knappPre:hover span:after{
+    opacity: 1;
+    left: 0;
+}
+
 img{ /* --Temp-- */ 
     height: 100px;
     width: 100px;
