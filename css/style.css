@@ -32,13 +32,13 @@ body{
 
 .Art{
     display: none;
-    width: 307px;
-    height: 172px;
+    width: 90%;
+    height: auto;
 }
 
 .Card{
-    width: 212px;
-    height: 296px;
+    width: 50%;
+    height: auto;
 }
 
 .knappNext{
@@ -150,15 +150,9 @@ body{
 } 
 
 @media only screen and (min-width: 1000px){
-
-    .Art{
-        width: 819px;
-        height: 459px;
-    }
     
     .Card{
-        width: auto;
-        height: auto;
+        width: 35%;
     }
 
     .knappNext{
@@ -206,4 +200,16 @@ body{
         width: 100px;
         margin: 5px;
     } 
+}
+
+@media only screen and (min-width: 1400px){
+    
+    .Card{
+        width: 20%;
+    }
+
+    .Art{
+        width: 80%;
+    }
+
 }
