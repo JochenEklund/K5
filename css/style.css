@@ -32,9 +32,11 @@ body{
 
 .Art{
     display: none;
+    width: 307px;
+    height: 172px;
 }
 
-img{
+.Card{
     width: 212px;
     height: 296px;
 }
