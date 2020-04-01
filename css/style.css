@@ -148,3 +148,62 @@ body{
     width: 50px;
     margin: 3px;
 } 
+
+@media only screen and (min-width: 1000px){
+
+    .Art{
+        width: 819px;
+        height: 459px;
+    }
+    
+    .Card{
+        width: auto;
+        height: auto;
+    }
+
+    .knappNext{
+        border-radius: 4px;
+        font-size: 28px;
+        padding: 20px;
+        width: 100px;
+        margin: 5px;
+    }
+ 
+    .knappNext span:after{
+        right: -20px;
+    }
+      
+    .knappNext:hover span{
+        padding-right: 24px;
+    }
+    
+    .knappPre{
+        border-radius: 4px;
+        font-size: 28px;
+        padding: 20px;
+        width: 130px;
+        margin: 5px;
+    }   
+ 
+    .knappPre span:after{
+        left: -15px;
+    }
+      
+    .knappPre:hover span{
+        padding-left: 24px;
+    }
+    
+    .knappPrePlaceholder{
+        border-radius: 4px;
+        padding: 20px;
+        width: 130px;
+        margin: 5px;
+    }   
+    
+    .knappNextPlaceholder{
+        border-radius: 4px;
+        padding: 20px;
+        width: 100px;
+        margin: 5px;
+    } 
+}
