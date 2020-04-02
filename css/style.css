@@ -30,6 +30,10 @@ body{
     height: 100vh;
 }
 
+#bild1{
+    margin-left: -25%;
+}
+
 .Art{
     display: none;
     width: 90%;
@@ -199,7 +203,12 @@ body{
         padding: 20px;
         width: 100px;
         margin: 5px;
-    } 
+    }
+    
+    #bild1{
+        margin-left: -18%;
+    }
+
 }
 
 @media only screen and (min-width: 1400px){
@@ -210,6 +219,10 @@ body{
 
     .Art{
         width: 80%;
+    }
+
+    #bild1{
+        margin-left: -10%;
     }
 
 }
