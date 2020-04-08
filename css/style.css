@@ -10,10 +10,36 @@ body{
     background-color: black;
 }
 
+header{
+    position: fixed;
+    color: white;
+    margin-top: -9%;
+    width: 40vh;
+    padding-left: 3vh;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav{
+    display: none;
+}
+
+footer{
+    position: fixed;
+    width: 48vh;
+    color: darkslategray;
+    margin-top: -30%;
+    font-size: 9px;
+    text-align: center;
+}
+
 #sektioner{
     overflow-x: scroll;
     width: auto;
     white-space: nowrap;
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .sektion{
@@ -155,6 +181,18 @@ body{
 
 @media only screen and (min-width: 1000px){
     
+    header{
+        margin-top: -9%;
+        width: 125vh;
+        padding-left: 0vh;
+        font-size: 50px;
+    }
+
+    footer{
+        width: 125vh;
+        margin-top: -26%;
+    }
+
     .Card{
         width: 35%;
     }
@@ -213,16 +251,121 @@ body{
 
 @media only screen and (min-width: 1400px){
     
+    header{
+        margin-top: -9%;
+        width: 207vh;
+        padding-left: 0vh;
+        font-size: 50px;
+    }
+
+    footer{
+        width: 207vh;
+        margin-top: -24%;
+    }
+
     .Card{
         width: 20%;
     }
 
     .Art{
-        width: 80%;
+        width: 70%;
     }
 
     #bild1{
         margin-left: -10%;
+    }
+
+    nav{
+        display: block;
+        margin-top: -10%;
+    }
+
+    .navbar{
+        width: 5rem;
+        height: 100vh;
+        position: fixed;
+        transition: 200ms ease;
+    }
+
+    .navbar-nav{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item{
+        width: 100%;
+    }
+
+    .nav-item:last-child{
+        margin-top: auto;
+    }
+
+    .nav-link{
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        color: orange;
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.7);
+        transition: 2000ms ease;
+    }
+
+    .nav-link:hover{
+        filter: grayscale(0%) opacity(1);
+    }
+
+    .link-text{
+        display: none;
+        margin-left: 1rem;
+    }
+
+    .nav-link img{
+        margin: 0 1.5rem;
+    }
+
+    .navbar:hover{
+        width: 16rem;
+        border-right: orange 0.05px solid;
+        transition: 1000ms ease;
+    }
+
+    .navbar:hover .link-text{
+        display: block;
+        animation: fadeIn ease 1000ms;
+    }
+
+    @keyframes fadeIn{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .logo{
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 1.3rem;
+        letter-spacing: 0.3ch;
+        width: 100%;
+    }
+
+    .logo img{
+        transform: rotate(0deg);
+        transition: transform 600ms;
+    }
+
+    .navbar:hover .logo svg{
+        transform: rotate(-180deg);
+    }
+
+    .nav-bild{
+        width: 3rem;
     }
 
 }
