@@ -5,7 +5,7 @@ let knappNph = document.querySelectorAll(".knappNextPlaceholder");
 let knappP = document.querySelectorAll(".knappPre");
 let knappPph = document.querySelectorAll("knappPrePlaceholder");
 let flex = document.querySelectorAll(".flex");
-let storlek = window.matchMedia('(max-width: 600px)');
+let storlek = window.matchMedia("(max-width: 600px)");
 
 function ÄndraBild()
 {
@@ -20,6 +20,35 @@ function ÄndraBild()
         art.forEach(element => element.removeEventListener("click", BytTillbaka));
         card.forEach(element => element.addEventListener("mouseover", Byt));
         art.forEach(element => element.addEventListener("mouseout", BytTillbaka));
+    }
+}
+
+knappN.forEach(element => element.addEventListener("click", KnappTryck));
+knappP.forEach(element => element.addEventListener("click", KnappTryck));
+
+function KnappTryck()
+{
+    if(storlek.matches){
+        card.forEach(element => element.removeEventListener("click", Byt));
+        art.forEach(element => element.removeEventListener("click", BytTillbaka));
+        setTimeout(
+            () => {
+                card.forEach(element => element.addEventListener("click", Byt));
+                art.forEach(element => element.addEventListener("click", BytTillbaka));
+            },
+            1000
+        );
+    }
+    else{
+        card.forEach(element => element.removeEventListener("mouseover", Byt));
+        art.forEach(element => element.removeEventListener("mouseout", BytTillbaka));
+        setTimeout(
+            () => {
+                card.forEach(element => element.addEventListener("mouseover", Byt));
+                art.forEach(element => element.addEventListener("mouseout", BytTillbaka));
+            },
+            1000
+        );
     }
 }
 
@@ -46,5 +75,6 @@ function BytTillbaka()
 }
 
 ÄndraBild();
+KnappTryck();
 
 storlek.addListener(ÄndraBild);
